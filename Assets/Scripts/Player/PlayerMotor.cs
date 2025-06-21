@@ -89,4 +89,10 @@ public class PlayerMotor : MonoBehaviour
             playerVelocity.y = Mathf.Sqrt(jumpHeight * -3.0f * gravity);
         }
     }
+
+    public void StopMovement()
+    {
+        playerVelocity = Vector3.zero;
+        controller.Move(Vector3.zero);
+    }
 }

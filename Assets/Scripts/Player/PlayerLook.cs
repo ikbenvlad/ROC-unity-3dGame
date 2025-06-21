@@ -21,4 +21,10 @@ public class PlayerLook : MonoBehaviour
         // rotate player to look left and right
         transform.Rotate(Vector3.up * (mouseX * Time.deltaTime) * xSensitivity);
     }
+
+    public void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked; // lock the cursor to the center of the screen
+        Cursor.visible = false; // hide the cursor
+    }
 }
