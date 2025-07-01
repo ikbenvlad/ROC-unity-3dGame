@@ -15,10 +15,6 @@ public class KillFloor : MonoBehaviour
 
             player.position = respawnPoint.position;
 
-            //var motor = player.GetComponent<PlayerMotor>();
-            //if (motor != null)
-            //    motor.StopMovement();
-
             if (controller != null)
                 controller.enabled = true;
         }
